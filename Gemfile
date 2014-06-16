@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+#ruby version
+#
+ruby '2.1.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'
@@ -37,4 +40,43 @@ gem 'spring',        group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+# additional gems from the book learn ruby
+# learn-rails
+
+#Here are gems we’ll add to the Gemfile:
+#• activerecord-tableless – helps to use Rails without a database
+#• figaro – configuration framework
+#• gibbon – access to the MailChimp API
+#• google_drive – use Google Drive spreadsheets for data storage
+#• high_voltage – for static pages like “about”
+#• simple_form – forms made easy
+#We’ll add these gems for the Zurb Foundation front-end framework:
+#• compass-rails – support for Zurb Foundation
+#• zurb-foundation – front-end framework
+#We’ll also add utilities that make development easier:
+#• better_errors – helps when things go wrong
+#• quiet_assets – suppresses distracting messages in the log
+#• rails_layout – generates files for an application layout
+
+
+gem 'activerecord-tableless'
+gem 'compass-rails'
+gem 'figaro'
+gem 'gibbon'
+gem 'google_drive'
+gem 'high_voltage'
+gem 'simple_form'
+gem 'zurb-foundation'
+
+group :development do
+  gem 'better_errors'
+  gem 'quiet_assets'
+  gem 'rails_layout'
+end
+
+
+
+
+
 
